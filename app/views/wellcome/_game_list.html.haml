@@ -1,0 +1,9 @@
+- games.each do |game|
+  .row.mbm
+    .col3of5
+      = game.created_at.to_s(:datetime)
+    .col1of5
+      = game.status
+    .col1of5
+      = link_to "Continue", game_path(game), class: "button" if game.in_progress?
+

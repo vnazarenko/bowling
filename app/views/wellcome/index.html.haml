@@ -1,0 +1,12 @@
+%h1
+  Hello to Your Bowling Club
+
+%h2.mbl
+  .row
+    Games in progress
+    = link_to "Create new game", new_game_path, class: "button mll"
+= render partial: 'game_list', locals: {games: @current_games}
+
+%h2
+  Finished games
+= render partial: 'game_list', locals: {games: @finished_games}

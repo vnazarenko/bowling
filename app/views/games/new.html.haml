@@ -1,0 +1,14 @@
+%h1
+  It's New Bowling game, just add players and start it.
+
+.row
+  = form_for @game do |f|
+    %ul.js-players-container
+      %li.js-player-template.mbm
+        = text_field_tag "players[]", '', placeholder: "Player Name", class: "js-player-template"
+    .row.mtm.mbm
+      %span.button.js-add-player
+        Add one more player
+    .row
+      = f.submit "Start Game", class: "button success"
+

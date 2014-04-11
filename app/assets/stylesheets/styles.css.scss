@@ -1,0 +1,20 @@
+// Place all the styles related to the games controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.wrapper {
+  width: 100%
+}
+
+.body {
+  width: 980px;
+  padding: 40px 0;
+  margin: 0 auto;
+}
+
+.score {
+  width: 50px;
+}
+
+.current {
+  background-color: #f4c84f;
+}
