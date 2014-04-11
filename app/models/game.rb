@@ -23,7 +23,7 @@ class Game < ActiveRecord::Base
 
   #---------   Scopes   -----------
   scope :in_progress, where("status <> 'finished'")
-  scope :finished, where(status: "finished")
+  scope :finished, where(status: :finished)
 
   #---------   Validations   -----------
   validates :status, inclusion: { in: %w(new in_progress finished) }
