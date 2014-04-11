@@ -27,6 +27,10 @@ class GamesController < ApplicationController
     @scoreboard = BowlingLogic.game_scoreboard(@game)
   end
 
+  def index
+    redirect_to :root
+  end
+
   def update
     begin
       score = params[:score]
