@@ -13,6 +13,9 @@
 
 ActiveRecord::Schema.define(version: 20140410083424) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "frames", force: true do |t|
     t.integer  "user_game_relation_id"
     t.integer  "first_try_score"
